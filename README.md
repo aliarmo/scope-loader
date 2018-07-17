@@ -26,6 +26,7 @@ normally, your user.vue code will be:
 well,we write data.users[0] repeatedly,long and boring.
 scope-loader solve this problem.The only thing you need to do is add scope-loader for your .vue file.
 ```
+//安装 npm install scope-loader --save-dev
 //webpack4
 module.exports = {
   module: {
@@ -67,3 +68,4 @@ You can use html comments to define your local variable,which is available for t
 
 <!-- /scope -->
 ```
+Attention:the variable you define must be start with "__",otherwise,it won't work.

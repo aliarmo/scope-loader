@@ -12,7 +12,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbjgithub/gulp-just-copy.git"
+    "url": "git+https://github.com/aliarmo/scope-loader.git"
   },
   "author": "aliarmo",
   "license": "ISC",
