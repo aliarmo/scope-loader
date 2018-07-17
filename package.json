@@ -1,0 +1,22 @@
+{
+  "name": "scope-loader",
+  "version": "1.0.0",
+  "description": "define local scope for all popular frame's template,like vue angular react",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "local",
+    "scope"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbjgithub/gulp-just-copy.git"
+  },
+  "author": "aliarmo",
+  "license": "ISC",
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  }
+}
