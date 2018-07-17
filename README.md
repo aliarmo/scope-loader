@@ -1,10 +1,11 @@
 # scope-loader
-	define local scope for all popular frame when you write your template,
-	eg: Vue/Angular/React.It's just a syntax sugar.
-	You can use it as a webpack loader,then you define local scope,and you never need to write long and long object path.
+define local scope for all popular frame when you write your template,
+eg: Vue/Angular/React.It's just a syntax sugar.
+You can use it as a webpack loader,then you define local scope,and you never need to write long and 
+long object path.
 
 
-#Usage
+# Usage
 I give an example using Vue,of course,it works with others frontend frame's template.
 Say you have to write an user.vue component
 
@@ -16,7 +17,8 @@ normally, your user.vue code will be:
   	  <p>{{data.users && data.users[0] && data.users[0].age}}</p>
   	  <p>{{data.users && data.users[0] && data.users[0].gender}}</p>
   	  <div>
-  	  	<p>{{data.users && data.users[0] && data.users[0].parents && data.users[0].parents[0] && data.users[0].parents[0].father}}</p>
+  	  	<p>{{data.users && data.users[0] && data.users[0].parents 
+  	  		&& data.users[0].parents[0] && data.users[0].parents[0].father}}</p>
   	  </div>
   	</div>
 </template>
@@ -56,7 +58,8 @@ then,your user.vue code can be:
 <!-- /scope -->
 </template>
 ```
-You can use html comments to define your local variable,which is available for the template in side the start scope and end scope.And it can be nested. As follows,\__user is totally equals to data.users && data.users[0] || {}
+You can use html comments to define your local variable,which is available for the template in side the start scope and end scope.And it can be nested. As follows,"__user" is totally equals to 
+"data.users && data.users[0] || {}"
 ```
 <!-- scope 
 	var __user="data.users && data.users[0] || {}"
