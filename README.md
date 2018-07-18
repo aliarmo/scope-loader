@@ -75,4 +75,4 @@ You can use html comments to define your local variable,which is available for t
 ```
 Attention:the variable you define must be start with "__",otherwise,it won't work.
 
-中文版README（https://zhuanlan.zhihu.com/p/39968059）
+中文版README(https://zhuanlan.zhihu.com/p/39968059)
