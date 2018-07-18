@@ -25,9 +25,14 @@ normally, your user.vue code will be:
 ```
 well,we write data.users[0] repeatedly,long and boring.
 scope-loader solve this problem.The only thing you need to do is add scope-loader for your .vue file.
+
+install scope-loader
 ```
-//安装 npm install scope-loader --save-dev
-//webpack4
+npm install scope-loader --save-dev
+```
+webpack4 loader config.
+attention：vue-loader version must be 10.1.0 or higher,for detail:(https://github.com/vuejs/vue-loader/issues/542)
+```
 module.exports = {
   module: {
     rules: [
