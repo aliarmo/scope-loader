@@ -62,9 +62,9 @@ function walk(tags,tpls,root){
 		}
 		var node={s_tag:tag,start:index}
 		var expObj={}
-		var vecExps=exps.match(/\s*([^=]+?)=\s*["'`]([^=]+?)["'`]\s*/gm) || []
+		var vecExps=exps.match(/\s*([^=]+?)=\s*["'`]([^"'`]+?)["'`]\s*/gm) || []
 		vecExps.forEach(exp=>{
-			var part=exp.match(/\s*(var)?\s*([^=]+?)=\s*["'`]([^=]+?)["'`]/m) || []
+			var part=exp.match(/\s*(var)?\s*([^=]+?)=\s*["'`]([^"'`]+?)["'`]/m) || []
 			if(!part.length) return
 			if(part[2] && !part[2].match(LEGAL_VAR_REG)){
 				//名称
