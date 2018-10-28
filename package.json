@@ -1,6 +1,6 @@
 {
   "name": "scope-loader",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "define local scope for all popular frame's template,like vue angular react",
   "main": "index.js",
   "scripts": {
